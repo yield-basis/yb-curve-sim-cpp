@@ -19,16 +19,16 @@ from datetime import datetime, timezone
 import numpy as np
 from pool_helpers import _first_candle_ts, _initial_price_from_file, strify_pool
 
-NAME = "1_A_mid_fee"
+NAME = "2_A_rate"
 
 # -------------------- Grid Definition --------------------
 GRID_SIZE = 64
 N_GRID_X = GRID_SIZE
 N_GRID_Y = GRID_SIZE
 
-X_name = "mid_fee"
-xmin = int(1 / 10_000 * 10**10)
-xmax = int(500 / 10_000 * 10**10)
+X_name = "donation_apy"
+xmin = 0.005
+xmax = 0.3
 xlogspace = True
 FEE_EQUALIZE = True
 
@@ -39,12 +39,12 @@ ylogspace = True
 
 
 if xlogspace:
-    X_vals = np.logspace(np.log10(xmin), np.log10(xmax), N_GRID_X).round().tolist()
+    X_vals = np.logspace(np.log10(xmin), np.log10(xmax), N_GRID_X).tolist()
 else:
     X_vals = np.linspace(xmin, xmax, N_GRID_X).tolist()
 
 if ylogspace:
-    Y_vals = np.logspace(np.log10(ymin), np.log10(ymax), N_GRID_Y).round().tolist()
+    Y_vals = np.logspace(np.log10(ymin), np.log10(ymax), N_GRID_Y).tolist()
 else:
     Y_vals = np.linspace(ymin, ymax, N_GRID_Y).tolist()
 
@@ -68,8 +68,8 @@ BASE_POOL = {
     ],
     "A": 20 * 10_000,
     "gamma": 10**14,  # unused in twocrypto
-    "mid_fee": int(5 / 10_000 * 10**10),
-    "out_fee": int(50 / 10_000 * 10**10),
+    "mid_fee": int(0.011 * 10**10),
+    "out_fee": int(0.011 * 10**10),
     "fee_gamma": int(0.001 * 10**18),
     "allowed_extra_profit": int(1e-12 * 10**18),
     "adjustment_step": int(1e-7 * 10**18),
