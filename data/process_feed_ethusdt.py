@@ -4,7 +4,7 @@ import json
 import lzma
 import numpy as np
 
-name = 'ethusdt-2025-2025'
+name = 'ethusdt-2023-2025'
 window_size = 10
 processed_data = []
 
