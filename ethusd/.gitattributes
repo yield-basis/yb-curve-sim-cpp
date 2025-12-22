@@ -1,0 +1,12 @@
+run_data/config-5_A_rate.json filter=lfs diff=lfs merge=lfs -text
+run_data/config-6_A_rate.json filter=lfs diff=lfs merge=lfs -text
+run_data/run-3_mid_fee_fg.json filter=lfs diff=lfs merge=lfs -text
+run_data/run-4_rate_fg.json filter=lfs diff=lfs merge=lfs -text
+run_data/run-5_A_rate.json filter=lfs diff=lfs merge=lfs -text
+run_data/run-6_A_rate.json filter=lfs diff=lfs merge=lfs -text
+run_data/config-3_mid_fee_fg.json filter=lfs diff=lfs merge=lfs -text
+run_data/config-4_rate_fg.json filter=lfs diff=lfs merge=lfs -text
+plots/result-5_A_rate.png filter=lfs diff=lfs merge=lfs -text
+plots/result-6_A_rate.png filter=lfs diff=lfs merge=lfs -text
+plots/result-3_mid_fee_fg.png filter=lfs diff=lfs merge=lfs -text
+plots/result-4_rate_fg.png filter=lfs diff=lfs merge=lfs -text
