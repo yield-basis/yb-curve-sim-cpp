@@ -22,7 +22,7 @@ from pool_helpers import _first_candle_ts, _initial_price_from_file, strify_pool
 NAME = "1_A_mid_fee"
 
 # -------------------- Grid Definition --------------------
-GRID_SIZE = 16
+GRID_SIZE = 100
 N_GRID_X = GRID_SIZE
 N_GRID_Y = GRID_SIZE
 

@@ -40,4 +40,8 @@ plt.xlabel(x_name)
 plt.ylabel(y_name)
 cbar.set_label(METRIC, rotation=270, labelpad=15)
 plt.tight_layout()
+
+plot_path = Path(__file__).resolve().parent / "plots" / f"result-{NAME}.png"
+plt.savefig(plot_path)
+
 plt.show()
