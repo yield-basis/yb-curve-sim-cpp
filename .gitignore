@@ -1,0 +1,4 @@
+/howto.md
+/data/*.json
+__pycache__
+*.pyc
