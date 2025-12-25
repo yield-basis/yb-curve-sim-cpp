@@ -15,3 +15,11 @@ ethusd/plots/result-7_A_mid_fee.png filter=lfs diff=lfs merge=lfs -text
 ethusd/run_data/config-8_one.json filter=lfs diff=lfs merge=lfs -text
 ethusd/run_data/run-8_one.json filter=lfs diff=lfs merge=lfs -text
 ethusd/run_data/run-8_one-detailed.json.xz filter=lfs diff=lfs merge=lfs -text
+ethusd/run_data/run-8_one-detailed.json.xz__div20 filter=lfs diff=lfs merge=lfs -text
+ethusd/run_data/run-8_one-detailed.json.xz__div5 filter=lfs diff=lfs merge=lfs -text
+ethusd/run_data/run-8_one-detailed.json.xz__div50 filter=lfs diff=lfs merge=lfs -text
+ethusd/run_data/run-8_one.json__div10 filter=lfs diff=lfs merge=lfs -text
+ethusd/run_data/run-8_one.json__div20 filter=lfs diff=lfs merge=lfs -text
+ethusd/run_data/run-8_one.json__div5 filter=lfs diff=lfs merge=lfs -text
+ethusd/run_data/run-8_one.json__div50 filter=lfs diff=lfs merge=lfs -text
+ethusd/run_data/run-8_one-detailed.json.xz__div10 filter=lfs diff=lfs merge=lfs -text

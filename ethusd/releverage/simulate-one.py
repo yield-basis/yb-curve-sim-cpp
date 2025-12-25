@@ -16,6 +16,8 @@ detailed_name = Path(__file__).parent.parent / 'run_data' / f'run-{NAME}-detaile
 with open(Path(__file__).parent.parent / 'run_data' / f'run-{NAME}.json') as f:
     boost_rate = float(json.load(f)['metadata']['base_pool']['donation_apy']) / (365 * 86400)
 
+png_path = Path(__file__).parent.parent / 'plots' / f'result-{NAME}.png'
+
 
 class AMM:
     def __init__(self, collateral, leverage, fee, oracle):
@@ -207,6 +209,5 @@ if __name__ == '__main__':
     pylab.xlabel('t (days)')
     pylab.ylabel('Deposit growth (%)')
     pylab.tight_layout()
+    pylab.savefig(png_path)
     pylab.show()
-
-    # Optimal fee = 3e-2
