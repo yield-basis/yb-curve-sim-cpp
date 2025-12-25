@@ -12,3 +12,6 @@ ethusd/plots/result-2_A_rate.png filter=lfs diff=lfs merge=lfs -text
 ethusd/run_data/config-7_A_mid_fee.json filter=lfs diff=lfs merge=lfs -text
 ethusd/run_data/run-7_A_mid_fee.json filter=lfs diff=lfs merge=lfs -text
 ethusd/plots/result-7_A_mid_fee.png filter=lfs diff=lfs merge=lfs -text
+ethusd/run_data/config-8_one.json filter=lfs diff=lfs merge=lfs -text
+ethusd/run_data/run-8_one.json filter=lfs diff=lfs merge=lfs -text
+ethusd/run_data/run-8_one-detailed.json.xz filter=lfs diff=lfs merge=lfs -text
